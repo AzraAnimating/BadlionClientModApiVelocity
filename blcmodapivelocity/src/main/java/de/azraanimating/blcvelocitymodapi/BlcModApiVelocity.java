@@ -53,7 +53,7 @@ public class BlcModApiVelocity {
 	}
 
 	@Subscribe
-	public void onInitializ(ProxyInitializeEvent event) {
+	public void onInitialize(ProxyInitializeEvent event) {
 		this.onEnable();//Just kept all that from the original Bungee version, just tweaked a few things.
 	}
 
@@ -78,9 +78,5 @@ public class BlcModApiVelocity {
 
 	public Conf getConf() {
 		return this.conf;
-	}
-
-	public ProxyServer getServer() {
-		return server;
 	}
 }
